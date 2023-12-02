@@ -1,0 +1,21 @@
+{
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": ".."
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+				"ms-python.python",
+				"ms-python.vscode-pylance",
+				"ms-python.black-formatter",
+				"njpwerner.autodocstring"
+			]
+        },
+        "debug.focusWindowOnBreak": false 
+    },
+    "runArgs": [
+        "--gpus",
+        "all"
+    ]
+}
