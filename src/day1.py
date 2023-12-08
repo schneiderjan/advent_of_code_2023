@@ -9,7 +9,7 @@ for line in lines:
     if not line:
         break
 
-    digits = re.findall(r'\d+', line)
+    digits = re.findall(r'\d', line)
     if digits:
         if len(digits) == 1:
             calibration_val = int(digits[0] + digits[0])
